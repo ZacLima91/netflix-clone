@@ -8,7 +8,6 @@ export const FooterComponent = styled.footer`
   margin-top: 4rem;
   font-size: 0.8rem;
 
-
   .container-footer {
     display: flex;
     flex-direction: column;
@@ -18,7 +17,7 @@ export const FooterComponent = styled.footer`
     margin-bottom: 2rem;
   }
 
-  h3{
+  h3 {
     font-size: 1rem;
   }
 
@@ -39,7 +38,7 @@ export const FooterComponent = styled.footer`
     text-decoration: none;
   }
 
-  svg{
+  svg {
     color: #ccc;
   }
 
@@ -48,10 +47,21 @@ export const FooterComponent = styled.footer`
     background: transparent;
     color: #ccc;
     border-radius: 2px;
-    border: solid 1px #ccc;;
+    border: solid 1px #ccc;
   }
 
   option {
     background-color: grey;
+  }
+
+  @media (max-width: 600px) {
+    ul {
+      list-style-type: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin: 1rem;
+    }
+
+    
   }
 `;

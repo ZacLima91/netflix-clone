@@ -15,12 +15,21 @@ export const ContentProfiles = styled.div`
   width: 100%;
   flex-direction: column;
   gap: 2rem;
+
+  @media (max-width: 420px){
+    h1{
+      font-size: 1rem;
+    }
+  }
 `;
 
 export const ContainerAvatar = styled.div`
+width: inherit;
   display: flex;
-  flex-direction: row;
-  gap: 1rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const ContentAvatar = styled.div<{ bg: string }>`
@@ -33,16 +42,11 @@ export const ContentAvatar = styled.div<{ bg: string }>`
 `;
 
 export const CardProfile = styled.div`
-   display: flex;
-   flex-direction: column;
-   width: 100%;
-   justify-content: center;
-    align-items: center;
-    gap: 1rem;
-   p{
-
-   }
-`
-  
-
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  p {
+  }
+`;

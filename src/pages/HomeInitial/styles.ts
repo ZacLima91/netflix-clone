@@ -32,10 +32,27 @@ export const HomeComponent = styled.div`
     gap: 1rem;
     font-size: 1.3rem;
     text-align: center;
+
+    @media (max-width: 650px) {
+      width: 80%;
+    }
   }
 
   .email-form-creating {
     display: flex;
+
+    @media (max-width: 650px) {
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 3rem;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+
+      form {
+        width: 100%;
+      }
+    }
   }
 
   .email-form-creating input {
@@ -43,6 +60,10 @@ export const HomeComponent = styled.div`
     width: 25rem;
     font-size: 5rem 1rem;
     font-weight: 600;
+
+    @media (max-width: 650px) {
+      width: 100%;
+    }
   }
 
   .email-form-creating button {
@@ -56,6 +77,13 @@ export const HomeComponent = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 650px) {
+      width: 8rem;
+      height: 3rem;
+      font-size: 1rem;
+      font-weight: 100;
+    }
   }
 
   .email-form-creating label {

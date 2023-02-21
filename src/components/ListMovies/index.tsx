@@ -52,9 +52,7 @@ export const MovieList = () => {
     <ListMoviesComponents>
       <Carousel {...settings}>
         {items?.map((item) => (
-          <div key={item.id}>
-            <Image src={item.imgUrl} alt={item.name} height={300} width={200} />
-          </div>
+          <Image src={item.imgUrl} alt={item.name} height={300} width={200} />
         ))}
       </Carousel>
     </ListMoviesComponents>

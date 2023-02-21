@@ -1,18 +1,14 @@
 import Slider from "react-slick";
 import styled from "styled-components";
 
-
 export const ListMoviesComponents = styled.div`
-    overflow: hidden;
-    width: 100%;
-
-    
-`
+  overflow: hidden;
+  width: 100%;
+`;
 
 export const Carousel = styled(Slider)`
   .slick-slider {
     width: 100%;
-   
   }
 
   .slick-list {
@@ -20,6 +16,12 @@ export const Carousel = styled(Slider)`
     margin: 3rem;
   }
 
+  @media (max-width: 480px) {
+    img{
+      width: 80%;
+      height: 30rem;
+    }
+  }
 
   .slick-prev,
   .slick-next {
@@ -58,6 +60,5 @@ export const Carousel = styled(Slider)`
     height: 10px;
     border-top: 2px solid #fff;
     border-right: 2px solid #fff;
-    
   }
 `;

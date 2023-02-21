@@ -1,14 +1,15 @@
-import { HeaderComponent } from "./styles";
+import { ContainerLogoComponent, HeaderComponent, HeaderNavbarComponent } from "./styles";
 import logo from "../../assets/logo/netflix-logo.svg";
+import { Image } from "../Image";
 import { Link } from "react-router-dom";
 
 export const Header = () => {
   return (
     <HeaderComponent>
-      <div className="header-navbar">
-        <div className="container-logo">
-          <img src={logo} alt="" />
-        </div>
+      <HeaderNavbarComponent>
+        <ContainerLogoComponent>
+          <Image src={logo} alt={""} width={120}/>
+        </ContainerLogoComponent>
         <div className="content-header">
           <div className="lang-selection-container">
             <select name="Portugues" id="">
@@ -20,7 +21,7 @@ export const Header = () => {
             <Link to="login">Entrar</Link>
           </div>
         </div>
-      </div>
+      </HeaderNavbarComponent>
     </HeaderComponent>
   );
 };

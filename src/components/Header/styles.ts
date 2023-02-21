@@ -1,23 +1,8 @@
 import styled from "styled-components";
 
 export const HeaderComponent = styled.header`
-
-display: flex;
-justify-content: center;
-  .header-navbar {
-    height: 5rem;
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-  }
-
-  .container-logo {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    width: 30%;
-  }
+  display: flex;
+  justify-content: center;
 
   .container-logo img {
     height: 2rem;
@@ -61,4 +46,19 @@ justify-content: center;
     position: absolute;
     width: 100%;
   }
+`;
+
+export const HeaderNavbarComponent = styled.nav`
+  height: 5rem;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+`;
+
+export const ContainerLogoComponent = styled.div`
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 30%;
 `;

@@ -6,6 +6,11 @@ export const SectionComponentAnimationTwo = styled.section`
   justify-content: center;
   width: 100%;
   margin: 3rem 0;
+  @media (max-width: 950px) {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
 
   .content-section {
     display: flex;
@@ -13,18 +18,20 @@ export const SectionComponentAnimationTwo = styled.section`
     justify-content: center;
     align-items: center;
     width: 80%;
-    height: 20rem;
+    @media (max-width: 950px) {
+      flex-direction: column;
+      width: 100%;
+    }
   }
 
   .content-text {
     width: 50%;
-    
   }
-  .content-text h1{
+  .content-text h1 {
     font-size: 2rem;
   }
 
-  .content-text h2{
+  .content-text h2 {
     font-size: 1.2rem;
   }
 

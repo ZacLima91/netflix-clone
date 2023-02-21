@@ -30,7 +30,7 @@ export const HomeInitial = () => {
                 </label>
               </form>
               <button>
-                <span> Vamos lá</span> <AiOutlineRight />
+                 Vamos lá<AiOutlineRight />
               </button>
             </div>
           </div>

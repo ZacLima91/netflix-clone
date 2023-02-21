@@ -43,7 +43,7 @@ export const Browser = () => {
 
   return (
     <>
-      <BrowserHeader img={user?.img} />
+      <BrowserHeader img={user?.img} name={user?.userName} />
       <BrowserComponents bg={bgStyle}>
         <BrowserContentMovie>
           <DetailsMovie>
